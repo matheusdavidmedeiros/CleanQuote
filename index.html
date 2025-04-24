@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cleaning Service Quote Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        .price-container {
+            text-align: center;
+            max-width: 500px;
+            margin: auto;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .price-container img {
+            max-width: 120px;
+        }
+        .good-news {
+            font-size: 1.2em;
+            color: green;
+            margin: 1rem 0;
+        }
+        #price-estimate {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        .disclaimer {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .call-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="price-container">
+        <!-- Updated image source to use the local companylogo.png -->
+        <img src="companylogo.png" alt="Company Logo">
+        <div class="good-news">🎉 GOOD NEWS! 🎉</div>
+        <div id="price-estimate">Estimated Price: $0</div>
+        <p class="disclaimer">
+            Please note: This is a rough estimate. The final price may vary depending on the scope of work and any additional services required.
+            Call us now to schedule a visit!
+        </p>
+        <a href="tel:+12019895646" class="call-button">📞 Call Now</a>
+    </div>
+    
+
+<!-- Dummy inputs for testing -->
+<div style="max-width: 500px; margin: auto; padding-top: 2rem;">
+    <label for="cleaning-type">Cleaning Type:</label>
+    <select id="wpforms-564-field_11">
+        <option value="">Select</option>
+        <option value="Deep Cleaning">Deep Cleaning</option>
+        <option value="Regular Cleaning">Regular Cleaning</option>
+        <option value="Post-Construction Cleaning">Post-Construction Cleaning</option>
+        <option value="Move-In/Move-Out Cleaning">Move-In/Move-Out Cleaning</option>
+    </select>
+
+    <div class="custom-sqft" style="margin-top: 1rem;">
+        <label>Square Footage:</label>
+        <input type="number" placeholder="e.g., 1200">
+    </div>
+</div>
+
+</body>
+</html>
